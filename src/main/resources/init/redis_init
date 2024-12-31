@@ -1,0 +1,6 @@
+-- 设置库存为 100
+SET lottery_inventory 100
+
+-- 初始化集合，添加一个占位用户后清空
+SADD lottery_users "temp"
+SREM lottery_users "temp"
